@@ -271,6 +271,16 @@ nav ul {
   border-radius: 2rem;
 }
 
+.carousel-inner .item img {
+  width: 70%;
+  margin: auto;
+}
+
+.carousel-inner .item a img {
+  width: 70%;
+  margin: auto;
+}
+
 @media screen and (max-width: 1332px) {
   htm {
     font-size: 53%;

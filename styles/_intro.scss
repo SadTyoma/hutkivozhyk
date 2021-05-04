@@ -49,3 +49,17 @@ nav {
   padding: 1rem 3rem;
   border-radius: 2rem;
 }
+.carousel-inner{
+  .item{
+    img{
+      width: 70%;
+      margin: auto;
+    }
+    a{
+      img{
+        width: 70%;
+        margin: auto;
+      }
+    }
+  }
+}
