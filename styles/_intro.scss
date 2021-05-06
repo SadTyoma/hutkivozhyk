@@ -19,47 +19,41 @@ nav {
     flex: 1 1 40rem;
   }
 }
-.intro {
-  min-height: 90vh;
-  width: 90%;
-  margin: auto;
-  flex-wrap: wrap;
-  @include flex(space-around, center, row);
-  h2 {
-    font-size: 8rem;
-    padding-top: 2rem;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: $gradient;
-    display: inline-block;
-  }
-  h3 {
-    font-size: 6rem;
-    padding: 2rem 0rem;
-  }
-  p {
-    padding-top: 2rem;
-    color: $gray-text;
-  }
-}
-.active {
+.activenav {
   background: $gray-text;
   color: white;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
   border-radius: 2rem;
 }
-.carousel-inner{
-  .item{
-    img{
-      width: 70%;
-      margin: auto;
+.location {
+  .infotext {
+    background: $background-color;
+    color: white;
+    min-height: 10vh;
+    padding: 0% 5%;
+    @include flex(flex-start, center, row);
+    ul {
+      flex: 1 1 40rem;
+      @include flex(space-around, center, row);
     }
-    a{
-      img{
-        width: 70%;
-        margin: auto;
-      }
+    h1 {
+      flex: 1 1 40rem;
+    }
+    a {
+      color: white;
+    }
+  }
+  .info {
+    display: flex;
+    img {
+      width: 40%;
+      height: 50vh;
+    }
+    #map {
+      display: flex;
+      justify-content: flex-end;
+      width: 60%;
+      height: 50vh;
     }
   }
 }
