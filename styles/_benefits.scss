@@ -22,7 +22,8 @@
   }
 }
 .card {
-  background: $background-color;
+  background: #1429e6;
+  border: none;
   flex: 1 1 40rem;
   min-height: 40vh;
   width: 20vw;
@@ -35,6 +36,6 @@
     padding: 1rem;
   }
   .card-icon {
-    background: rgb(126, 95, 240);
+    background: #f03030;
   }
 }

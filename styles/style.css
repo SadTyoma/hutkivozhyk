@@ -177,7 +177,7 @@ nav {
       -ms-flex-direction: row;
           flex-direction: row;
   min-height: 10vh;
-  width: 60%;
+  width: 95%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -224,10 +224,44 @@ nav ul {
 }
 
 .activenav {
-  background: #2c2c2c;
+  background: #154353;
   color: white;
   padding: 1rem 1rem;
   border-radius: 2rem;
+}
+
+.mainmenubtn {
+  color: #2c2c2c;
+  border: none;
+  cursor: pointer;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-child {
+  position: absolute;
+  z-index: 5;
+  display: none;
+  background: #154353;
+  color: white;
+  padding: 1rem 1rem;
+  border-radius: 2rem;
+}
+
+.dropdown-child a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-child {
+  display: block;
 }
 
 .location .infotext {
@@ -284,11 +318,6 @@ nav ul {
   display: flex;
 }
 
-.location .info img {
-  width: 40%;
-  height: 50vh;
-}
-
 .location .info #map {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,7 +325,7 @@ nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 60%;
+  width: 100%;
   height: 50vh;
 }
 
@@ -341,7 +370,8 @@ nav ul {
 }
 
 .card {
-  background: #154353;
+  background: #1429e6;
+  border: none;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
@@ -360,7 +390,7 @@ nav ul {
 }
 
 .card .card-icon {
-  background: #7e5ff0;
+  background: #f03030;
 }
 
 .second-head {
@@ -424,8 +454,8 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#9eefe1), color-stop(51%, #4830f0), to(#9eefe1));
-  background-image: linear-gradient(to right, #9eefe1 0%, #4830f0 51%, #9eefe1 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#1429e6), color-stop(51%, #f03030), to(#1429e6));
+  background-image: linear-gradient(to right, #1429e6 0%, #f03030 51%, #1429e6 100%);
   background-size: 200% auto;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
