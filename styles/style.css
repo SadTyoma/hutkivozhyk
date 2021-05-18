@@ -51,6 +51,11 @@ a {
   color: #2c2c2c;
 }
 
+a:hover {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
 #contact {
   min-height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url(/img/pexels-joshua-köller-757185.jpg);
@@ -230,6 +235,10 @@ nav ul {
   border-radius: 2rem;
 }
 
+.activenav:hover {
+  color: #fff;
+}
+
 .mainmenubtn {
   color: #2c2c2c;
   border: none;
@@ -350,8 +359,14 @@ nav ul {
   text-align: center;
 }
 
-.cards {
-  width: 90%;
+.ben-cards {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url(/img/golf.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(/img/golf.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  width: 100%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -364,33 +379,39 @@ nav ul {
       flex-wrap: wrap;
 }
 
-.cards .img {
+.ben-cards .img {
   max-width: 15%;
   margin: 2rem;
 }
 
-.card {
-  background: #1429e6;
+.ben-card {
+  background: #0b188fe5;
   border: none;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 40rem;
           flex: 1 1 40rem;
-  min-height: 40vh;
+  min-height: 50vh;
   width: 20vw;
   margin: 2rem 5rem;
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   color: white;
+  border-radius: 5rem;
+  overflow: hidden;
 }
 
-.card .h4,
-.card .p {
+.ben-card h4,
+.ben-card p {
   padding: 1rem;
 }
 
-.card .card-icon {
-  background: #f03030;
+.ben-card .card-icon {
+  background: #bb2222f8;
+}
+
+.ben-card .card-icon img {
+  padding: 2rem;
 }
 
 .second-head {
@@ -399,6 +420,7 @@ nav ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: auto;
 }
 
 .second-head .shead {
@@ -454,8 +476,8 @@ nav ul {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#1429e6), color-stop(51%, #f03030), to(#1429e6));
-  background-image: linear-gradient(to right, #1429e6 0%, #f03030 51%, #1429e6 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#0b188fe5), color-stop(51%, #bb2222f8), to(#0b188fe5));
+  background-image: linear-gradient(to right, #0b188fe5 0%, #bb2222f8 51%, #0b188fe5 100%);
   background-size: 200% auto;
   -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -471,55 +493,173 @@ nav ul {
   color: white;
 }
 
-.cards-oil,
-.cards-brakes,
-.cards-engine,
-.cards-clutch,
-.cards-transmission,
-.cards-cooling,
-.cards-rudder,
-.cards-suspension {
-  width: 80%;
-  margin: auto;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+.card {
+  background: #0b188fe5;
+  border: mone;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  min-height: 20vh;
+  width: 5vw;
+  margin: 2rem 5rem;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: white;
+  border-radius: 2rem;
+}
+
+.card h5,
+.card p {
+  padding: 1rem;
+}
+
+.card button {
+  background: #154353;
+  border: none;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+.card button:hover {
+  background: #bb2222f8;
+}
+
+.services-head {
+  background: #154353;
+  padding: 3rem;
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 7vh;
-  padding: 2rem;
-}
-
-.cards-oil .card-title,
-.cards-brakes .card-title,
-.cards-engine .card-title,
-.cards-clutch .card-title,
-.cards-transmission .card-title,
-.cards-cooling .card-title,
-.cards-rudder .card-title,
-.cards-suspension .card-title {
-  margin-bottom: 50%;
-}
-
-.cards-oil a,
-.cards-brakes a,
-.cards-engine a,
-.cards-clutch a,
-.cards-transmission a,
-.cards-cooling a,
-.cards-rudder a,
-.cards-suspension a {
-  background: white;
-  color: #2c2c2c;
-  font-size: calc(0.5rem + 0.5vw);
-}
-
-.services {
+  color: white;
   text-align: center;
+}
+
+.oil {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url(/img/tools1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(/img/tools1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.suspension {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url(/img/suspension.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(/img/suspension.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.rudder {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url(/img/rudder.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(/img/rudder.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.brakes {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url(/img/wheel1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(/img/wheel1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.engine {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url(/img/engine1.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(/img/engine1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.clutch {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url(/img/clutch2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(/img/clutch2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.transmission {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url(/img/tools2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(/img/tools2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+.cooling {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent)), url(/img/engine2.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent), url(/img/engine2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+
+#toTop {
+  width: 10rem;
+  background: #154353;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  display: none;
+  color: white;
+  font-family: verdana;
+  font-size: 1.5rem;
+}
+
+.modal-content {
+  background: #0b188fe5;
+  color: white;
+}
+
+.modal-content .close {
+  color: black;
+}
+
+.modal-header {
+  background: #bb2222f8;
+}
+
+.modal-body button {
+  width: 100%;
+  padding: 2rem 6rem;
+  background: #154353;
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  -webkit-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+  border-radius: 2rem;
 }
 
 @media screen and (max-width: 1332px) {

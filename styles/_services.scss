@@ -1,9 +1,7 @@
 .second-head {
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
     url(/img/flag2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  @include addimg;
   .shead {
     width: 95%;
     margin: 0 0 0 auto;
@@ -29,9 +27,9 @@
       letter-spacing: 2px;
       background-image: linear-gradient(
         to right,
-        #1429e6 0%,
-        #f03030 51%,
-        #1429e6 100%
+        $background-color-blue 0%,
+        $background-color-red 51%,
+        $background-color-blue 100%
       );
       background-size: 200% auto;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -45,31 +43,99 @@
     }
   }
 }
-.cards-oil,
-.cards-brakes,
-.cards-engine,
-.cards-clutch,
-.cards-transmission,
-.cards-cooling,
-.cards-rudder,
-.cards-suspension {
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-around;
-  align-items: center;
-  min-height: 7vh;
-  padding: 2rem;
-  .card-title {
-    margin-bottom: 50%;
+
+.card {
+  background: $background-color-blue;
+  border: mone;
+  flex: 1 1 40rem;
+  min-height: 20vh;
+  width: 5vw;
+  margin: 2rem 5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  color: white;
+  border-radius: 2rem;
+  h5,
+  p {
+    padding: 1rem;
   }
-  a {
-    background: white;
-    color: $gray-text;
-    font-size: calc(0.5rem + 0.5vw);
+  button{
+    background: $background-color;
+    border: none;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 1rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: $header4;
+  }
+  button:hover{
+    background: $background-color-red;
   }
 }
-.services {
+
+.services-head {
+  background: $background-color;
+  padding: 3rem;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
   text-align: center;
 }
+
+.oil {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/tools1.jpg);
+  @include addimg;
+}
+.suspension {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/suspension.jpg);
+  @include addimg;
+}
+.rudder {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/rudder.jpg);
+  @include addimg;
+}
+.brakes {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/wheel1.jpg);
+  @include addimg;
+}
+.engine {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/engine1.jpg);
+  @include addimg;
+}
+.clutch {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/clutch2.jpg);
+  @include addimg;
+}
+.transmission {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/tools2.jpg);
+  @include addimg;
+}
+.cooling {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/engine2.jpg);
+  @include addimg;
+}
+#toTop {
+  width:10rem;
+  background:$background-color;
+  text-align:center;
+  padding:1rem;
+  position:fixed;
+  bottom:1rem;
+  right:1rem;
+  cursor:pointer;
+  display:none;
+  color:white;
+  font-family:verdana;
+  font-size:$header5;
+  }

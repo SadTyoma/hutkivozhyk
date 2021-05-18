@@ -25,6 +25,10 @@ nav {
   padding: 1rem 1rem;
   border-radius: 2rem;
 }
+
+.activenav:hover {
+  color: #fff;
+}
 ////////////////////////////
 .mainmenubtn {
   color: $gray-text;

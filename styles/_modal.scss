@@ -1,0 +1,23 @@
+.modal-content {
+  background: $background-color-blue;
+  color: white;
+  .close {
+    color: black;
+  }
+}
+.modal-header {
+  background: $background-color-red;
+}
+.modal-body {
+  button {
+    width: 100%;
+    padding: 2rem 6rem;
+    background: $background-color;
+    color: white;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+    border-radius:2rem;
+  }
+}

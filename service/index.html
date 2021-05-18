@@ -1,796 +1,1666 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Хуткі вожык замена масла">
-        <meta name="robots" content="index,follow">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Хуткі вожык замена масла" />
+    <meta name="robots" content="index,follow" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-        <link rel="icon" href="/icons/hedgehog_animal_nature_wildlife_forest_icon_142015.ico">
-        <link rel="stylesheet" href="../styles/style.css">
-        <title>Хуткі вожык</title>
-    </head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="/icons/hedgehog_animal_nature_wildlife_forest_icon_142015.ico"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <title>Хуткі вожык</title>
+  </head>
+  <body>
     <header class="main-head">
-        <nav>
-            <div class="logo">
-                <img src="/icons/hedgehog_animal_nature_wildlife_forest_icon_142015.ico" alt="logo">
-                <h1>Хуткі вожык</h1>
+      <nav>
+        <div class="logo">
+          <img
+            src="/icons/hedgehog_animal_nature_wildlife_forest_icon_142015.ico"
+            alt="logo"
+          />
+          <h1>Хуткі вожык</h1>
+        </div>
+        <ul>
+          <li><a href="/">Главная</a></li>
+          <li><a class="activenav" href="/service/">Услуги</a></li>
+          <li>
+            <div class="dropdown">
+              <a class="mainmenubtn">Больше информации</a>
+              <div class="dropdown-child">
+                <a href="#">Наши партнёры</a>
+                <a href="#">О нас</a>
+                <a href="#">Отзывы</a>
+              </div>
             </div>
-            <ul>
-                <li><a href="/">Главная</a></li>
-                <li><a class="activenav" href="/service/">Услуги</a></li>
-                <li>
-                  <div class="dropdown">
-                    <a class="mainmenubtn">Больше информации</a>
-                    <div class="dropdown-child">
-                      <a href="#">Наши партнёры</a>
-                      <a href="#">О нас</a>
-                      <a href="#">Отзывы</a>
-                    </div>
-                  </div> 
-                </li>
-            </ul>
-        </nav>
+          </li>
+        </ul>
+      </nav>
     </header>
     <header class="second-head">
-        <div class="shead">
-        <nav>
-            <ul id="1">
-                <li><a class="gr-button" href="#expressoil">Экспресс замена масла</a></li>
-                <li><a class="gr-button" href="#oil">Замена масла и тех. жидкостей</a></li>
-                <li><a class="gr-button" href="#suspension">Диагностика и ремонт подвески</a></li>
-                <li><a class="gr-button" href="#rudder">Ремонт рулевого управления</a></li>
-            </ul>
-            <ul id="2">
-                <li><a class="gr-button" href="#brakes">Ремонт тормозов</a></li>
-                <li><a class="gr-button" href="#engine">Ремонт двигателя</a></li>
-                <li><a class="gr-button" href="#clutch">Ремонт сцепления</a></li>
-                <li><a class="gr-button" href="#cooling">Ремонт системы охлаждения</a></li>
-            </ul>
-            <ul id="3">
-                <li><a class="gr-button" href="#transmission">Ремонт трансмиссии</a></li>
-                <li><a class="gr-button" href="#taxi">Корпоративным клиентам и такси</a></li>
-                <li><a class="gr-button" href="#maintenance">Проведение планового ТО</a></li>
-            </ul>
+      <div class="shead">
+        <nav class="container-sm">
+          <div id="1" class="row">
+            <div class="col-md-3">
+              <a class="gr-button" href="#transmission">Ремонт трансмиссии</a>
+            </div>
+            <div class="col-md-3">
+              <a class="gr-button" href="#oil">Замена масла и тех. жидкостей</a>
+            </div>
+            <div class="col-md-3">
+              <a class="gr-button" href="#suspension"
+                >Диагностика и ремонт подвески</a
+              >
+            </div>
+            <div class="col-md-3">
+              <a class="gr-button" href="#rudder">Ремонт рулевого управления</a>
+            </div>
+          </div>
+          <div id="2" class="row">
+            <div class="col-md-3">
+              <a class="gr-button" href="#brakes">Ремонт тормозов</a>
+            </div>
+            <div class="col-md-3">
+              <a class="gr-button" href="#engine">Ремонт двигателя</a>
+            </div>
+            <div class="col-md-3">
+              <a class="gr-button" href="#clutch">Ремонт сцепления</a>
+            </div>
+            <div class="col-md-3">
+              <a class="gr-button" href="#cooling">Ремонт системы охлаждения</a>
+            </div>
+          </div>
         </nav>
-        </div>
+      </div>
     </header>
     <section class="services">
-        <h1 id="oil">Замена масла и тех. жидкостей</h1>
-        <p>*Стоимость работ по замене моторного масла и фильтров, при условии покупки материалов в нашем СТО составляет 0.00 BYN.</p>
-        <div class="cards-oil">
-        <div class="card">
+      <header class="services-head">
+        <h2 id="oil">Замена масла и тех. жидкостей</h2>
+        <p>
+          *Стоимость работ по замене моторного масла и фильтров, при условии
+          покупки материалов в нашем СТО составляет 0.00 BYN.
+        </p>
+      </header>
+
+      <div class="oil container-xl center">
+        <div class="row">
+          <div class="card col-sm-auto">
             <div class="card-body">
-              <h5 class="card-title">Замена моторного масла + масляного фильтра </h5>
-              <p class="card-text"> 22,5 BYN</p>
-              <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
+              <h5 class="card-title">
+                Замена моторного масла + масляного фильтра
+              </h5>
+              <p class="card-text">22,5 BYN</p>
+
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card col-sm-auto">
             <div class="card-body">
-              <h5 class="card-title">Замена масляного фильтра </h5>
+              <h5 class="card-title">Замена масляного фильтра</h5>
+              <div class="card-footer">
+                <p class="card-text">от 5,00 BYN</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#exampleModalLong"
+                >
+                  СВЯЗАТЬСЯ С НАМИ
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена воздушного фильтра</h5>
               <p class="card-text">от 5,00 BYN</p>
-              <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card col-sm-auto">
             <div class="card-body">
-              <h5 class="card-title">Замена воздушного фильтра </h5>
+              <h5 class="card-title">Замена топливного фильтра</h5>
+              <p class="card-text">от 15,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена салонного фильтра</h5>
               <p class="card-text">от 5,00 BYN</p>
-              <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Замена топливного фильтра </h5>
-              <p class="card-text"> от 15,00 BYN</p>
-              <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Замена салонного фильтра </h5>
-              <p class="card-text">от 5,00 BYN</p>
-              <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-            </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card col-sm-auto">
             <div class="card-body">
               <h5 class="card-title">Замена масла МКПП</h5>
               <p class="card-text">от 30,00 BYN</p>
-              <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card col-sm-auto">
             <div class="card-body">
-              <h5 class="card-title">Замена масла АКПП/Вариатора/DSG </h5>
+              <h5 class="card-title">Замена масла АКПП/Вариатора/DSG</h5>
               <p class="card-text">от 70,00 BYN</p>
-              <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card col-sm-auto">
             <div class="card-body">
               <h5 class="card-title">Замена масла раздаточной коробки</h5>
               <p class="card-text">от 30,00 BYN</p>
-              <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card col-sm-auto">
             <div class="card-body">
-              <h5 class="card-title">Замена трансмиссионного масла в редукторе (дифференциале)</h5>
+              <h5 class="card-title">
+                Замена трансмиссионного масла в редукторе (дифференциале)
+              </h5>
               <p class="card-text">от 30,00 BYN</p>
-              <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card col-sm-auto">
             <div class="card-body">
-              <h5 class="card-title">Замена охлаждающей жидкости (антифриза)</h5>
+              <h5 class="card-title">
+                Замена охлаждающей жидкости (антифриза)
+              </h5>
               <p class="card-text">от 30,00 BYN</p>
-              <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card col-sm-auto">
             <div class="card-body">
               <h5 class="card-title">Замена тормозной жидкости</h5>
               <p class="card-text">от 25,00 BYN</p>
-              <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-        </div>
-        <div class="card">
+          </div>
+          <div class="card col-sm-auto">
             <div class="card-body">
               <h5 class="card-title">Замена гидравлической жидкости (ГУР)</h5>
               <p class="card-text">от 30,00 BYN</p>
-              <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
+          </div>
         </div>
+      </div>
+
+      <header class="services-head">
+        <h2 id="suspension">Диагностика и ремонт подвески</h2>
+        <p>
+          *В случае ремонта подвески в нашем СТО, диагностика будет произведена
+          бесплатно.
+        </p>
+      </header>
+
+      <div class="suspension container-xl center">
+        <div class="row">
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Диагностика подвески и рулевого управления
+              </h5>
+              <p class="card-text">10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена стойки стабилизатора (1 шт.)</h5>
+              <p class="card-text">от 10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена втулки стабилизатора (1 шт.)</h5>
+              <p class="card-text">от 10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена шаровой опоры</h5>
+              <p class="card-text">от 25,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена амортизатора (стойки подвески) передней
+              </h5>
+              <p class="card-text">от 50,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена опорного подшипника</h5>
+              <p class="card-text">от 50,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена амортизатора (стойки подвески) задней
+              </h5>
+              <p class="card-text">от 30,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена пыльника амортизатора</h5>
+              <p class="card-text">от 30,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена отбойника амортизатора</h5>
+              <p class="card-text">от 30,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена пружины (рессоры) подвески, передней
+              </h5>
+              <p class="card-text">от 50,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена пружины (рессоры) подвески,задней
+              </h5>
+              <p class="card-text">от 30,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена рычага подвески (верхнего/нижнего)
+              </h5>
+              <p class="card-text">от 40,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена ступицы колеса</h5>
+              <p class="card-text">от 40,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена ступичного подшипника</h5>
+              <p class="card-text">от 45,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена поворотного кулака</h5>
+              <p class="card-text">от 35,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена сайлентблока рычага</h5>
+              <p class="card-text">от 10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена сайлентблоков балки задней подвески
+              </h5>
+              <p class="card-text">от 60,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена сайлентблоков подрамника передней, задней подвески (со
+                снятием подрамника)
+              </h5>
+              <p class="card-text">от 60,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена подрамника подвески</h5>
+              <p class="card-text">от 50,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена балки задней подвески</h5>
+              <p class="card-text">от 90,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
         </div>
-        <h1 id="suspension">Диагностика и ремонт подвески</h1>
-        <p>*В случае ремонта подвески в нашем СТО, диагностика будет произведена бесплатно.</p>
-        <div class="cards-suspension">
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Диагностика подвески и рулевого управления</h5>
-                  <p class="card-text">10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+      </div>
+
+      <header class="services-head">
+        <h2 id="rudder">Ремонт рулевого управления</h2>
+        <p>
+          * При условии ремонта автомобиля в нашем СТО, стоимость диагностики
+          рулевой системы 0,00 BYN
+        </p>
+      </header>
+
+      <div class="rudder container-xl center">
+        <div class="row">
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Диагностика подвески и рулевого управления
+              </h5>
+              <p class="card-text">10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена стойки стабилизатора (1 шт.)</h5>
-                  <p class="card-text">от 10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена жидкости ГУР</h5>
+              <p class="card-text">от 20,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена втулки стабилизатора (1 шт.)</h5>
-                  <p class="card-text">от 10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена рулевой тяги (1 шт.)</h5>
+              <p class="card-text">от 10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена шаровой опоры</h5>
-                  <p class="card-text">от 25,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена пыльника рулевой рейки (рулевой тяги)
+              </h5>
+              <p class="card-text">от 10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена амортизатора (стойки подвески) передней</h5>
-                  <p class="card-text">от 50,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена рулевого наконечника (1 шт.)</h5>
+              <p class="card-text">от 10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена опорного подшипника	</h5>
-                  <p class="card-text">от 50,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена амортизатора (стойки подвески) задней</h5>
-                  <p class="card-text">от 30,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена пыльника амортизатора</h5>
-                  <p class="card-text">от 30,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена отбойника амортизатора</h5>
-                  <p class="card-text">от 30,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена пружины (рессоры) подвески, передней	</h5>
-                  <p class="card-text">от 50,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена пружины (рессоры) подвески,задней</h5>
-                  <p class="card-text">от 30,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена рычага подвески (верхнего/нижнего)	</h5>
-                  <p class="card-text">от 40,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена ступицы колеса</h5>
-                  <p class="card-text">от 40,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена ступичного подшипника</h5>
-                  <p class="card-text">от 45,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена поворотного кулака</h5>
-                  <p class="card-text">от 35,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена сайлентблока рычага</h5>
-                  <p class="card-text">от 10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена сайлентблоков балки задней подвески</h5>
-                  <p class="card-text">от 60,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена сайлентблоков подрамника передней, задней подвески (со снятием подрамника)</h5>
-                  <p class="card-text">от 60,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена подрамника подвески</h5>
-                  <p class="card-text">от 50,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена балки задней подвески</h5>
-                  <p class="card-text">от 90,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
+          </div>
         </div>
-        <h1 id="rudder">Ремонт рулевого управления</h1>
-        <p>* При условии ремонта автомобиля в нашем СТО, стоимость диагностики рулевой системы 0,00 BYN</p>
-        <div class="cards-rudder">
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Диагностика подвески и рулевого управления </h5>
-                  <p class="card-text"> 10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+      </div>
+
+      <header class="services-head">
+        <h2 id="brakes">Ремонт тормозной системы</h2>
+      </header>
+
+      <div class="brakes container-xl center">
+        <div class="row">
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена тормозной жидкости</h5>
+              <p class="card-text">от 20,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена жидкости ГУР </h5>
-                  <p class="card-text">от 20,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Прокачка тормозной системы</h5>
+              <p class="card-text">от 20,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена рулевой тяги (1 шт.)</h5>
-                  <p class="card-text">от 10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена колодок тормозных дисковых (1 ось)
+              </h5>
+              <p class="card-text">от 30,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена пыльника рулевой рейки (рулевой тяги)</h5>
-                  <p class="card-text">от 10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена колодок тормозных барабанных (1 ось)
+              </h5>
+              <p class="card-text">от 40,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена рулевого наконечника (1 шт.)</h5>
-                  <p class="card-text">от 10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена колодок стояночного тормоза (ручника)
+              </h5>
+              <p class="card-text">от 40,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена тормозных дисков (1 ось)</h5>
+              <p class="card-text">от 40,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена тормозных барабанов (1 ось)</h5>
+              <p class="card-text">от 45,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена суппорта тормозного</h5>
+              <p class="card-text">от 25,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Ремонт суппорта тормозного</h5>
+              <p class="card-text">от 35,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена тормозных цилиндров</h5>
+              <p class="card-text">от 25,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена главного тормозного цилиндра</h5>
+              <p class="card-text">от 45,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Регулировка троса стояночного тормоза (ручника)
+              </h5>
+              <p class="card-text">от 10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена троса стояночного тормоза (ручника)
+              </h5>
+              <p class="card-text">от 30,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена датчика ABS</h5>
+              <p class="card-text">от 15,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена шланга тормозного/трубки тормозной
+              </h5>
+              <p class="card-text">от 40,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Изготовление трубки тормозной (медной)</h5>
+              <p class="card-text">от 40,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
         </div>
-        <h1 id="brakes">Ремонт тормозной системы</h1>
-        <div class="cards-brakes">
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена тормозной жидкости</h5>
-                  <p class="card-text">от 20,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+      </div>
+
+      <header class="services-head">
+        <h2 id="engine">Ремонт двигателя</h2>
+        <p>
+          * Стоимость работ по замене моторного масла и фильтров, при условии
+          покупки материалов в нашем СТО состовляет 0.00 BYN.
+        </p>
+      </header>
+
+      <div class="engine container-xl center">
+        <div class="row">
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена моторного масла в двигателе</h5>
+              <p class="card-text">22,5 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Прокачка тормозной системы</h5>
-                  <p class="card-text">от 20,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена масляного фильтра</h5>
+              <p class="card-text">от 5,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена колодок тормозных дисковых (1 ось)</h5>
-                  <p class="card-text">от 30,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена воздушного фильтра</h5>
+              <p class="card-text">от 5,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена колодок тормозных барабанных (1 ось)</h5>
-                  <p class="card-text">от 40,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена топливного фильтра</h5>
+              <p class="card-text">от 15,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена колодок стояночного тормоза (ручника)</h5>
-                  <p class="card-text">от 40,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена свечей зажигания (4 шт.)</h5>
+              <p class="card-text">от 15,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена тормозных дисков (1 ось)</h5>
-                  <p class="card-text">от 40,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена катушек зажигания (4 шт.)</h5>
+              <p class="card-text">от 10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена тормозных барабанов (1 ось)</h5>
-                  <p class="card-text">от 45,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена ремня ГРМ</h5>
+              <p class="card-text">от 120,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена суппорта тормозного</h5>
-                  <p class="card-text">от 25,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена приводного (ручейкового) ремня</h5>
+              <p class="card-text">от 10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Ремонт суппорта тормозного</h5>
-                  <p class="card-text">от 35,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена натяжителя (натяжного ролика) приводного ремня
+              </h5>
+              <p class="card-text">от 10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена тормозных цилиндров</h5>
-                  <p class="card-text">от 25,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена прокладки клапанной крышки</h5>
+              <p class="card-text">от 20,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена главного тормозного цилиндра</h5>
-                  <p class="card-text">от 45,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена прокладки поддона картера</h5>
+              <p class="card-text">от 20,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Регулировка троса стояночного тормоза (ручника)</h5>
-                  <p class="card-text">от 10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена прокладки впускного коллектора</h5>
+              <p class="card-text">от 30,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена троса стояночного тормоза (ручника)</h5>
-                  <p class="card-text">от 30,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена прокладки выпускного коллектора</h5>
+              <p class="card-text">от 30,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена датчика ABS</h5>
-                  <p class="card-text">от 15,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена (очистка) дроссельной заслонки</h5>
+              <p class="card-text">от 50,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена шланга тормозного/трубки тормозной	</h5>
-                  <p class="card-text">от 40,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена опоры (подушки) двигателя передней/задней
+              </h5>
+              <p class="card-text">от 30,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Изготовление трубки тормозной (медной)</h5>
-                  <p class="card-text">от 40,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена стартера</h5>
+              <p class="card-text">от 50,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-        </div> 
-        <h1 id="engine">Ремонт двигателя</h1>
-        <p> * Стоимость работ по замене моторного масла и фильтров, при условии покупки материалов в нашем СТО состовляет 0.00 BYN.</p>
-        <div class="cards-engine">
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена моторного масла в двигателе</h5>
-                  <p class="card-text">22,5 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена генератора</h5>
+              <p class="card-text">от 50,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена масляного фильтра</h5>
-                  <p class="card-text">от 5,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена топливного насоса (бензонасоса)</h5>
+              <p class="card-text">от 50,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена воздушного фильтра</h5>
-                  <p class="card-text">от 5,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена маховика двигателя</h5>
+              <p class="card-text">от 160,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена топливного фильтра</h5>
-                  <p class="card-text">от 15,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена расходомера (ДМРВ, ДОРВ)</h5>
+              <p class="card-text">от 10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
             </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена свечей зажигания (4 шт.)</h5>
-                  <p class="card-text">от 15,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена катушек зажигания (4 шт.)</h5>
-                  <p class="card-text">от 10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена ремня ГРМ</h5>
-                  <p class="card-text">от 120,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена приводного (ручейкового) ремня</h5>
-                  <p class="card-text">от 10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена натяжителя (натяжного ролика) приводного ремня	</h5>
-                  <p class="card-text">от 10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена прокладки клапанной крышки</h5>
-                  <p class="card-text">от 20,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена прокладки поддона картера</h5>
-                  <p class="card-text">от 20,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена прокладки впускного коллектора</h5>
-                  <p class="card-text">от 30,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена прокладки выпускного коллектора	</h5>
-                  <p class="card-text">от 30,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена (очистка) дроссельной заслонки</h5>
-                  <p class="card-text">от 50,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена опоры (подушки) двигателя передней/задней	</h5>
-                  <p class="card-text">от 30,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена стартера</h5>
-                  <p class="card-text">от 50,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена генератора</h5>
-                  <p class="card-text">от 50,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена топливного насоса (бензонасоса)</h5>
-                  <p class="card-text">от 50,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена маховика двигателя</h5>
-                  <p class="card-text">от 160,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена расходомера (ДМРВ, ДОРВ)</h5>
-                  <p class="card-text">от 10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-        </div>  
-        <h1 id="clutch">Ремонт сцепления</h1>
-        <div class="cards-clutch">
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена сцепления (корзины, диска сцепления, выжимного подшипника)</h5>
-                  <p class="card-text">от 150,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена главного цилиндра сцепления</h5>
-                  <p class="card-text">от 40,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена рабочего цилиндра сцепления</h5>
-                  <p class="card-text">от 25,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-        </div>    
-        <h1 id="transmission">Ремонт трансмиссии</h1>
-        <div class="cards-transmission">
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена масла МКПП</h5>
-                  <p class="card-text">20,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена масла АКПП/Вариатора/DSG</h5>
-                  <p class="card-text">от 60,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена масла раздаточной коробки</h5>
-                  <p class="card-text">от 20,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена трансмиссионного масла в редукторе (дифференциале)	</h5>
-                  <p class="card-text">от 20,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена сальников полуосей</h5>
-                  <p class="card-text">от 40,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена полуоси (приводного вала в сборе)</h5>
-                  <p class="card-text">от 50,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена карданного вала</h5>
-                  <p class="card-text">от 40,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена крестовин/ШРУС (карданного вала)</h5>
-                  <p class="card-text">от 40,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена подвесного подшипника	</h5>
-                  <p class="card-text">от 40,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена ШРУС</h5>
-                  <p class="card-text">от 40,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена пыльника ШРУС</h5>
-                  <p class="card-text">от 40,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Шприцевание ходовой автомобиля</h5>
-                  <p class="card-text">от 5,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-        </div> 
-        <h1 id="cooling">Ремонт системы охлаждения</h1>
-        <div class="cards-cooling">
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена салонного фильтра</h5>
-                  <p class="card-text">от 5,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена охлаждающей жидкости (антифриза)</h5>
-                  <p class="card-text">от 20,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена радиатора охлаждения двигателя</h5>
-                  <p class="card-text">от 50,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена расширительного бачка</h5>
-                  <p class="card-text">от 10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена термостата</h5>
-                  <p class="card-text">от 20,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена водяного насоса (помпы)</h5>
-                  <p class="card-text">от 40,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена патрубков системы охлаждения</h5>
-                  <p class="card-text">от 10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title">Замена датчика температуры охлаждающей жидкости (антифриза)</h5>
-                  <p class="card-text">от 10,00 BYN</p>
-                  <a href="#" class="btn btn-primary">СВЯЗАТЬСЯ С НАМИ</a>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
+
+      <header class="services-head">
+        <h2 id="clutch">Ремонт сцепления</h2>
+      </header>
+
+      <div class="clutch container-xl center">
+        <div class="row">
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена сцепления (корзины, диска сцепления, выжимного
+                подшипника)
+              </h5>
+              <p class="card-text">от 150,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена главного цилиндра сцепления</h5>
+              <p class="card-text">от 40,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена рабочего цилиндра сцепления</h5>
+              <p class="card-text">от 25,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header class="services-head">
+        <h2 id="transmission">Ремонт трансмиссии</h2>
+      </header>
+
+      <div class="transmission container-xl center">
+        <div class="row">
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена масла МКПП</h5>
+              <p class="card-text">20,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена масла АКПП/Вариатора/DSG</h5>
+              <p class="card-text">от 60,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена масла раздаточной коробки</h5>
+              <p class="card-text">от 20,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена трансмиссионного масла в редукторе (дифференциале)
+              </h5>
+              <p class="card-text">от 20,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена сальников полуосей</h5>
+              <p class="card-text">от 40,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена полуоси (приводного вала в сборе)
+              </h5>
+              <p class="card-text">от 50,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена карданного вала</h5>
+              <p class="card-text">от 40,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена крестовин/ШРУС (карданного вала)
+              </h5>
+              <p class="card-text">от 40,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена подвесного подшипника</h5>
+              <p class="card-text">от 40,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена ШРУС</h5>
+              <p class="card-text">от 40,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена пыльника ШРУС</h5>
+              <p class="card-text">от 40,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Шприцевание ходовой автомобиля</h5>
+              <p class="card-text">от 5,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header class="services-head">
+        <h2 id="cooling">Ремонт системы охлаждения</h2>
+      </header>
+
+      <div class="cooling container-xl center">
+        <div class="row">
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена салонного фильтра</h5>
+              <p class="card-text">от 5,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена охлаждающей жидкости (антифриза)
+              </h5>
+              <p class="card-text">от 20,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена радиатора охлаждения двигателя</h5>
+              <p class="card-text">от 50,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена расширительного бачка</h5>
+              <p class="card-text">от 10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена термостата</h5>
+              <p class="card-text">от 20,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена водяного насоса (помпы)</h5>
+              <p class="card-text">от 40,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">Замена патрубков системы охлаждения</h5>
+              <p class="card-text">от 10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+          <div class="card col-sm-auto">
+            <div class="card-body">
+              <h5 class="card-title">
+                Замена датчика температуры охлаждающей жидкости (антифриза)
+              </h5>
+              <p class="card-text">от 10,00 BYN</p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-toggle="modal"
+                data-target="#exampleModalLong"
+              >
+                СВЯЗАТЬСЯ С НАМИ
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModalLong"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Связаться с нами
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form action="https://formspree.io/f/xwkakkva" method="POST">
+                <div class="name-form">
+                  <label for="name">Name:</label>
+                  <input type="text" name="name" required />
+                </div>
+                <div class="email-form">
+                  <label for="email">Email:</label>
+                  <input type="text" required name="_replyto" />
+                </div>
+                <button value="Send" type="submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-  <section id="contact">
-    <div class="form-wrapper">
+    <section id="contact">
+      <div class="form-wrapper">
         <header class="foem-head">
-            <h2>Contsct US</h2>
+          <h2>Contsct US</h2>
         </header>
-        <form action="https://formspree.io/f/xwkakkva"
-        method="POST">
-            <div class="name-form">
-                <label for="name">Name:</label>
-                <input type="text" name="name" required>
-            </div>
-            <div class="email-form">
-                <label for="email">Email:</label>
-                <input type="text" required name="_replyto">
-            </div>
-            <button value="Send" type="submit">Submit</button>
+        <form action="https://formspree.io/f/xwkakkva" method="POST">
+          <div class="name-form">
+            <label for="name">Name:</label>
+            <input type="text" name="name" required />
+          </div>
+          <div class="email-form">
+            <label for="email">Email:</label>
+            <input type="text" required name="_replyto" />
+          </div>
+          <button value="Send" type="submit">Submit</button>
         </form>
-    </div>
-</section>
+      </div>
+    </section>
     <footer>
-        <h4>Хуткі вожык &copy; 2021</h4>
-        <ul>
-            <li><a href="#"><img src="/icons/twitter 1.svg" alt="twitter-social"></a></li>
-            <li><a href="#"><img src="/icons/instagram 1.svg" alt="instagram-social"></a></li>
-            <li><a href="#"><img src="/icons/youtube-symbol 1.svg" alt="youtube-social"></a></li>
-        </ul>
+      <h4>Хуткі вожык &copy; 2021</h4>
+      <ul>
+        <li>
+          <a href="#"
+            ><img src="/icons/twitter 1.svg" alt="twitter-social"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="/icons/instagram 1.svg" alt="instagram-social"
+          /></a>
+        </li>
+        <li>
+          <a href="#"
+            ><img src="/icons/youtube-symbol 1.svg" alt="youtube-social"
+          /></a>
+        </li>
+      </ul>
     </footer>
-</body>
+    <div id="toTop">^ Наверх</div>
+  </body>
+
+  <script></script>
 </html>

@@ -2,16 +2,25 @@ $header1: 2.5rem;
 $header2: 4rem;
 $header3: 2.5rem;
 $header4: 2rem;
+$header5: 1.5rem;
 $text: 2.5rem;
 $gradient: linear-gradient(90deg, #38d39f, #38a4d3);
 $background-color: #154353;
 $gray-text: #2c2c2c;
+$background-color-blue: #0b188fe5;
+$background-color-red: #bb2222f8;
 
 @mixin flex($justify, $align, $direction) {
   display: flex;
   justify-content: $justify;
   align-items: $align;
   flex-direction: $direction;
+}
+@mixin addimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
 }
 
 @import "global";
@@ -20,6 +29,7 @@ $gray-text: #2c2c2c;
 @import "intro";
 @import "benefits";
 @import "services";
+@import "modal";
 
 @media screen and (max-width: 1332px) {
   htm {
