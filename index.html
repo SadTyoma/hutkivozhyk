@@ -15,7 +15,7 @@
   <script src="app.js"></script> -->
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-        <link rel="icon" href="/icons/hedgehog_animal_nature_wildlife_forest_icon_142015.ico">
+        <link rel="icon" href="/icons/logo.svg">
         <link rel="stylesheet" href="./styles/style.css">
         <title>Хуткі вожык</title>
     </head>
@@ -23,7 +23,7 @@
     <header class="main-head">
         <nav>
             <div class="logo">
-                <img src="/icons/hedgehog_animal_nature_wildlife_forest_icon_142015.ico" alt="logo">
+                <img src="/icons/logo.svg" alt="logo">
                 <h1>Хуткі вожык</h1>
             </div>
             <ul>
@@ -33,9 +33,9 @@
                 <div class="dropdown">
                   <a class="mainmenubtn">Больше информации</a>
                   <div class="dropdown-child">
-                    <a href="#">Наши партнёры</a>
-                    <a href="#">О нас</a>
-                    <a href="#">Отзывы</a>
+                    <a href="/partners/">Наши партнёры</a>
+                    <a href="/about/">О нас</a>
+                    <a href="/jobs/">Вакансии</a>
                   </div>
                 </div> 
               </li>
@@ -51,13 +51,25 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="./img/pexels-joshua-köller-757185.jpg" alt="First slide">
+            <img class="d-block w-100" src="./img/audi.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Хуткi Вожык</h5>
+              <p>Автомастерская Хуткi Вожык предлагает чистый и качественный ремонт Вашего авто. Широкий спектр услуг. Автозапчасти в наличии.</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="./img/pexels-roberto-nickson-3166786.jpg" alt="Second slide">
+            <img class="d-block w-100" src="./img/photo1.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>г.Минск, пер. Солтыса, 5</h5>
+            <p>пн.-вс. 9.00-20.00</p>
+            </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="./img/x5.jfif" alt="Third slide">
+            <img class="d-block w-100" src="./img/racebmw.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Хуткi Вожык</h5>
+              <p>Автомастерская для тех кто действительно любит свой авто!</p>
+            </div>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -124,19 +136,23 @@
   <section id="contact">
     <div class="form-wrapper">
         <header class="foem-head">
-            <h2>Contsct US</h2>
+            <h2>Связаться с нами</h2>
         </header>
         <form action="https://formspree.io/f/xwkakkva"
         method="POST">
             <div class="name-form">
-                <label for="name">Name:</label>
+                <label for="name">Имя:</label>
                 <input type="text" name="name" required>
             </div>
             <div class="email-form">
                 <label for="email">Email:</label>
                 <input type="text" required name="_replyto">
             </div>
-            <button value="Send" type="submit">Submit</button>
+            <div class="phone-form">
+                <label for="tel">Номер телефона:</label>
+                <input type="tel" pattern="\+375\[0-9]{2}\[0-9]{3}\[0-9]{2}\[0-9]{2}">
+            </div>
+            <button value="Send" type="submit">Подтвердить</button>
         </form>
     </div>
 </section>
@@ -155,9 +171,9 @@
     <footer>
         <h4>Хуткі вожык &copy; 2021</h4>
         <ul>
-            <li><a href="#"><img src="/icons/twitter 1.svg" alt="twitter-social"></a></li>
-            <li><a href="#"><img src="/icons/instagram 1.svg" alt="instagram-social"></a></li>
-            <li><a href="#"><img src="/icons/youtube-symbol 1.svg" alt="youtube-social"></a></li>
+            <li><a href="https://www.facebook.com/hutkivozhyk/" target="_blank"><img src="/icons/facebook2.svg" alt="twitter-social"></a></li>
+            <li><a href="https://www.instagram.com/hutkivozhyk/" target="_blank"><img src="/icons/instagram 1.svg" alt="instagram-social"></a></li>
+            <li><a href="https://www.youtube.com/channel/UC0QFl6al_XQxci9K_dup7dA" target="_blank"><img src="/icons/youtube-symbol 1.svg" alt="youtube-social"></a></li>
         </ul>
     </footer>
 </body>

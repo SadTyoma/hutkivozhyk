@@ -22,15 +22,23 @@
     cursor: pointer;
     transition: background 0.5s ease-in-out;
   }
+  button:hover {
+    background: $background-color-blue;
+  }
 }
 .foem-head {
   text-align: center;
   padding: 4rem;
 }
 .name-form,
-.email-form {
+.email-form,
+.phone-form {
   padding: 3rem;
   text-align: center;
+}
+.phone-form {
+  text-align: start;
+  padding-left: 5rem;
 }
 .form-wrapper label {
   margin: 0rem 3rem;
@@ -44,4 +52,5 @@
 }
 .form-wrapper input {
   padding: 1rem 3rem;
+  width: 30vw;
 }

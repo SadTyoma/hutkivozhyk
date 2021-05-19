@@ -1,0 +1,45 @@
+.partners {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/porshe.jpg);
+  @include addimg;
+  .card {
+    background: $background-color-blue;
+    border: none;
+    flex: 1 1 40rem;
+    min-height: 50vh;
+    width: 20vw;
+    margin: 2rem 5rem;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1),
+      0px 20px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: white;
+    border-radius: 5rem;
+    overflow: hidden;
+    h4,
+    p {
+      padding: 1rem;
+    }
+    a {
+      background: $background-color;
+      border: none;
+      padding: 2rem;
+      margin: 2rem;
+      border-radius: 1rem;
+      font-family: "Montserrat", sans-serif;
+      font-size: $header4;
+    }
+    a:hover {
+      background: $background-color-red;
+    }
+    .card-icon {
+      min-height: 20vh;
+      background: white;
+
+      img {
+        padding: 1rem;
+        max-width: 55%;
+        margin: 1rem;
+      }
+    }
+  }
+}

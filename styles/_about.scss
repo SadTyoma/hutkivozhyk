@@ -1,0 +1,51 @@
+.about-head {
+  text-align: center;
+  background: $background-color;
+  opacity: 0.8;
+  border-radius: 2rem;
+  color: white;
+  margin: 2rem;
+  padding: 2rem;
+  h2{
+    font-size: calc(2rem + 1vw);
+  }
+}
+.about {
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url(/img/mercedes3.jpg);
+  @include addimg;
+  padding: 3rem;
+  .card {
+    background: $background-color;
+    opacity: 0.8;
+    & a {
+      color: white;
+    }
+  }
+}
+.certificates {
+    h2 {
+    background: $background-color;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: $header2;
+    margin: 0rem;
+  }
+  .certificate {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        background: linear-gradient(45deg, $background-color-blue, $background-color-red);
+      img {
+          padding: 2rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .gallery7 {
+        grid-column: 1/3;
+      }
+    }
+}
