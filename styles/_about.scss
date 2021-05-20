@@ -26,12 +26,13 @@
 }
 .certificates {
     h2 {
-    background: $background-color;
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    font-size: $header2;
-    margin: 0rem;
+      font-family: 'Dancing Script', cursive;
+      background: $background-color;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      font-size: $header2;
+      margin: 0rem;
   }
   .certificate {
         display: grid;

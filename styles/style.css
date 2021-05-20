@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* global styles */
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +16,8 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 5rem;
+  font-family: 'Permanent Marker', cursive;
 }
 
 li,
@@ -71,6 +71,7 @@ a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: 'Dancing Script', cursive;
 }
 
 .form-wrapper {
@@ -95,9 +96,13 @@ a:hover {
   background: #0b188fe5;
 }
 
-.foem-head {
+.form-head {
   text-align: center;
   padding: 4rem;
+}
+
+.form-head h2 {
+  font-size: calc(2rem + 1vw);
 }
 
 .name-form,
@@ -105,6 +110,12 @@ a:hover {
 .phone-form {
   padding: 3rem;
   text-align: center;
+}
+
+.name-form label,
+.email-form label,
+.phone-form label {
+  font-size: calc(1rem + 1vw);
 }
 
 .phone-form {
@@ -127,6 +138,74 @@ a:hover {
 .form-wrapper input {
   padding: 1rem 3rem;
   width: 30vw;
+}
+
+.location .infotext {
+  font-family: 'Dancing Script', cursive;
+  background: #154353;
+  color: white;
+  min-height: 10vh;
+  padding: 0% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.location .infotext ul {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.location .infotext h5 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  font-size: calc(1rem + 1vw);
+}
+
+.location .infotext a {
+  color: white;
+  font-size: calc(1rem + 1vw);
+}
+
+.location .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.location .info #map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  height: 50vh;
 }
 
 footer {
@@ -239,6 +318,11 @@ nav ul {
           flex: 1 1 40rem;
 }
 
+nav ul li a {
+  font-family: 'Dancing Script', cursive;
+  font-size: calc(2rem + 1vw);
+}
+
 .activenav {
   background: #154353;
   color: white;
@@ -284,75 +368,9 @@ nav ul {
   display: block;
 }
 
-.location .infotext {
-  background: #154353;
-  color: white;
-  min-height: 10vh;
-  padding: 0% 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.location .infotext ul {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.location .infotext h1 {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40rem;
-          flex: 1 1 40rem;
-  font-size: calc(1rem + 1vw);
-}
-
-.location .infotext a {
-  color: white;
-  font-size: calc(1rem + 1vw);
-}
-
-.location .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.location .info #map {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 100%;
-  height: 50vh;
-}
-
 .benefits-head {
   background: #154353;
+  font-family: 'Dancing Script', cursive;
   padding: 3rem;
   min-height: 30vh;
   display: -webkit-box;
@@ -483,11 +501,11 @@ nav ul {
   text-decoration: none;
   display: inline-block;
   color: white;
-  padding: 20px 30px;
-  margin: 10px 20px;
-  border-radius: 10px;
-  font-family: "Montserrat", sans-serif;
+  padding: 1rem 3rem;
+  margin: 1rem 2rem;
+  border-radius: 1rem;
   text-transform: uppercase;
+  font-size: calc(2rem + 0.5vw);
   letter-spacing: 2px;
   background-image: -webkit-gradient(linear, left top, right top, from(#0b188fe5), color-stop(51%, #bb2222f8), to(#0b188fe5));
   background-image: linear-gradient(to right, #0b188fe5 0%, #bb2222f8 51%, #0b188fe5 100%);
@@ -533,7 +551,6 @@ nav ul {
   padding: 2rem;
   margin: 2rem;
   border-radius: 1rem;
-  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
 }
 
@@ -542,6 +559,7 @@ nav ul {
 }
 
 .services-head {
+  font-family: 'Dancing Script', cursive;
   background: #154353;
   padding: 3rem;
   min-height: 20vh;
@@ -645,13 +663,13 @@ nav ul {
   cursor: pointer;
   display: none;
   color: white;
-  font-family: verdana;
   font-size: 1.5rem;
 }
 
 .modal-content {
   background: #0b188fe5;
   color: white;
+  font-family: 'Dancing Script', cursive;
 }
 
 .modal-content .close {
@@ -660,6 +678,7 @@ nav ul {
 
 .modal-header {
   background: #bb2222f8;
+  font-family: 'Dancing Script', cursive;
 }
 
 .modal-body button {
@@ -766,6 +785,7 @@ nav ul {
 }
 
 .certificates h2 {
+  font-family: 'Dancing Script', cursive;
   background: #154353;
   color: white;
   text-align: center;

@@ -19,11 +19,11 @@
       text-decoration: none;
       display: inline-block;
       color: white;
-      padding: 20px 30px;
-      margin: 10px 20px;
-      border-radius: 10px;
-      font-family: "Montserrat", sans-serif;
+      padding: 1rem 3rem;
+      margin: 1rem 2rem;
+      border-radius: 1rem;
       text-transform: uppercase;
+      font-size: calc(2rem + 0.5vw);
       letter-spacing: 2px;
       background-image: linear-gradient(
         to right,
@@ -65,7 +65,6 @@
     padding: 2rem;
     margin: 2rem;
     border-radius: 1rem;
-    font-family: "Montserrat", sans-serif;
     font-size: $header4;
   }
   button:hover{
@@ -74,6 +73,7 @@
 }
 
 .services-head {
+  font-family: 'Dancing Script', cursive;
   background: $background-color;
   padding: 3rem;
   min-height: 20vh;
@@ -136,6 +136,5 @@
   cursor:pointer;
   display:none;
   color:white;
-  font-family:verdana;
   font-size:$header5;
-  }
+}

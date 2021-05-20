@@ -17,6 +17,12 @@ nav {
   ul {
     @include flex(space-around, center, row);
     flex: 1 1 40rem;
+    li {
+      a {
+        font-family: 'Dancing Script', cursive;
+        font-size: calc(2rem + 1vw);
+      }
+    }
   }
 }
 .activenav {
@@ -29,7 +35,7 @@ nav {
 .activenav:hover {
   color: #fff;
 }
-////////////////////////////
+
 .mainmenubtn {
   color: $gray-text;
   border: none;
@@ -59,39 +65,4 @@ nav {
 
 .dropdown:hover .dropdown-child {
   display: block;
-}
-/////////////////////////////////////////
-.location {
-  .infotext {
-    background: $background-color;
-    color: white;
-    min-height: 10vh;
-    padding: 0% 5%;
-    @include flex(flex-start, center, row);
-    ul {
-      flex: 1 1 40rem;
-      @include flex(space-around, center, row);
-    }
-    h1 {
-      flex: 1 1 40rem;
-      font-size: calc(1rem + 1vw);
-    }
-    a {
-      color: white;
-      font-size: calc(1rem + 1vw);
-    }
-  }
-  .info {
-    display: flex;
-    // img {
-    //   width: 40%;
-    //   height: 50vh;
-    // }
-    #map {
-      display: flex;
-      justify-content: flex-end;
-      width: 100%;
-      height: 50vh;
-    }
-  }
 }

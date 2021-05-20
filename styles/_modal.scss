@@ -1,12 +1,14 @@
 .modal-content {
   background: $background-color-blue;
   color: white;
+  font-family: 'Dancing Script', cursive;
   .close {
     color: black;
   }
 }
 .modal-header {
   background: $background-color-red;
+  font-family: 'Dancing Script', cursive;
 }
 .modal-body {
   button {
